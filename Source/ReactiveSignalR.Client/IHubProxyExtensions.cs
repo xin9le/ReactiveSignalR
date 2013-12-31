@@ -24,7 +24,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -54,7 +54,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -85,7 +85,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6, T7>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6, T7>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -117,7 +117,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -150,7 +150,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -184,7 +184,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -219,7 +219,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -255,7 +255,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -292,7 +292,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -330,7 +330,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -369,7 +369,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
@@ -409,7 +409,7 @@ namespace ReactiveSignalR.Client
 		/// <param name="eventName">The name of the event.</param>
 		/// <param name="onData">The callback</param>
 		/// <returns>An <see cref="IDisposable"/> that represents this subscription.</returns>
-		public static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> onData)
+		internal static IDisposable On<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>(this IHubProxy proxy, string eventName, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> onData)
 		{
 			if (proxy == null)						throw new ArgumentNullException("proxy");
 			if (string.IsNullOrEmpty(eventName))	throw new ArgumentNullException("eventName");
