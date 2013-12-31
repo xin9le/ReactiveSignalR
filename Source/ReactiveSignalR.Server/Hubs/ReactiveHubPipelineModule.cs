@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNet.SignalR;
 using Microsoft.AspNet.SignalR.Hubs;
 using System;
+using System.Linq;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 
@@ -584,7 +585,13 @@ namespace ReactiveSignalR.Server.Hubs
 		/// </returns>
 		protected override bool OnBeforeOutgoing(IHubOutgoingInvokerContext context)
 		{
-			if (typeof(THub).Name == context.Invocation.Hub)
+			var type	= typeof(THub);
+			var data	= type.GetCustomAttributesData().FirstOrDefault(x => x.AttributeType == typeof(HubNameAttribute));
+			var hubName	= data == null
+						? type.Name
+						: data.ConstructorArguments[0].Value as string;
+
+			if (hubName == context.Invocation.Hub)
 				this.beforeOutgoingSubject.OnNext(context);
 			return base.OnBeforeOutgoing(context);
 		}
@@ -598,7 +605,13 @@ namespace ReactiveSignalR.Server.Hubs
 		/// <param name="context">A description of the client-side hub method invocation.</param>
 		protected override void OnAfterOutgoing(IHubOutgoingInvokerContext context)
 		{
-			if (typeof(THub).Name == context.Invocation.Hub)
+			var type	= typeof(THub);
+			var data	= type.GetCustomAttributesData().FirstOrDefault(x => x.AttributeType == typeof(HubNameAttribute));
+			var hubName	= data == null
+						? type.Name
+						: data.ConstructorArguments[0].Value as string;
+
+			if (hubName == context.Invocation.Hub)
 				this.afterOutgoingSubject.OnNext(context);
 			base.OnAfterOutgoing(context);
 		}
