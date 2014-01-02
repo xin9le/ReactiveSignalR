@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>ReactiveSignalR.Client</id>
-        <version>0.1.0</version>
+        <version>0.1.1</version>
         <title>ReactiveSignalR for .NET Client</title>
         <authors>xin9le</authors>
         <owners>xin9le</owners>
@@ -10,7 +10,7 @@
         <projectUrl>https://github.com/xin9le/ReactiveSignalR</projectUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <description>Provides the reactive programming for SignalR .NET Client.</description>
-        <copyright>Copyright© 2013 xin9le, All rights reserved.</copyright>
+        <copyright>Copyright© 2014 xin9le, All rights reserved.</copyright>
         <tags>Rx SignalR</tags>
         <dependencies>
             <dependency id="Microsoft.AspNet.SignalR.Client" version="2.0.0" />
