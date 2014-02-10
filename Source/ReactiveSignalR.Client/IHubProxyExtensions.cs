@@ -4,6 +4,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Reactive;
+using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Threading;
 
@@ -43,7 +44,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 
@@ -74,7 +75,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 
@@ -106,7 +107,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 
@@ -139,7 +140,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 
@@ -173,7 +174,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 
@@ -208,7 +209,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 
@@ -244,7 +245,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 
@@ -281,7 +282,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 
@@ -319,7 +320,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 	
@@ -358,7 +359,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 	
@@ -398,7 +399,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 
 	
@@ -439,7 +440,7 @@ namespace ReactiveSignalR.Client
 				);
 			};
 			subscription.Received += handler;
-			return new AnonymousDisposable(() => subscription.Received -= handler);
+			return Disposable.Create(() => subscription.Received -= handler);
 		}
 		#endregion
 
