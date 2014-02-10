@@ -4,6 +4,13 @@ ReactiveSignalR provides reactive programming for SignalR application (both serv
 
 
 
+##Documentations
+
+* [Documentation for .NET Client](https://github.com/xin9le/ReactiveSignalR/wiki/Documentation-for-.NET-Client)
+* [Documentation for Server](https://github.com/xin9le/ReactiveSignalR/wiki/Documentation-for-Server)
+
+
+
 ##Installation
 To install this library, run the following command in the Package Manager Console.
 
