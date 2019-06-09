@@ -3,6 +3,23 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <LangVersion>latest</LangVersion>
+        <IsPackable>true</IsPackable>
+        <VersionPrefix>1.0.0</VersionPrefix>
+        <VersionSuffix></VersionSuffix>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/xin9le/ReactiveSignalR</PackageProjectUrl>
+        <Description>Provides reactive programming for ASP.NET Core SignalR client application.</Description>
+        <PackageReleaseNotes>- ASP.NET Core support</PackageReleaseNotes>
+        <Copyright>Copyright© xin9le, All rights reserved.</Copyright>
+        <PackageTags>SignalR, Rx</PackageTags>
+        <RepositoryUrl>https://github.com/xin9le/ReactiveSignalR</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <PackageIconUrl>https://github.com/xin9le/ReactiveSignalR/blob/master/assets/icon/rx.png</PackageIconUrl>
+        <Authors>xin9le</Authors>
+        <Product>ReactiveSignalR</Product>
+        <Company></Company>
     </PropertyGroup>
 
     <ItemGroup>
