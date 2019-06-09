@@ -16,7 +16,7 @@
         <PackageTags>SignalR, Rx</PackageTags>
         <RepositoryUrl>https://github.com/xin9le/ReactiveSignalR</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
-        <PackageIconUrl>https://github.com/xin9le/ReactiveSignalR/blob/master/assets/icon/rx.png</PackageIconUrl>
+        <PackageIconUrl>https://raw.githubusercontent.com/xin9le/ReactiveSignalR/master/assets/icon/rx.png</PackageIconUrl>
         <Authors>xin9le</Authors>
         <Product>ReactiveSignalR</Product>
         <Company></Company>
