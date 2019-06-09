@@ -1,0 +1,1 @@
+dotnet pack ../src/ReactiveSignalR/ReactiveSignalR.csproj -c Release -o ./packages
