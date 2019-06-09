@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.SignalR.Client;
 
 
 
-namespace ReactiveSignalR.Client
+namespace ReactiveSignalR
 {
     /// <summary>
     /// Provides <see cref="HubConnection"/> extension methods.

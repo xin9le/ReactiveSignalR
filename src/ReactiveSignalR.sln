@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactiveSignalR.Client", "ReactiveSignalR.Client\ReactiveSignalR.Client.csproj", "{26EB156E-CAED-45EA-A1E7-A4C999D9F4C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactiveSignalR", "ReactiveSignalR\ReactiveSignalR.csproj", "{26EB156E-CAED-45EA-A1E7-A4C999D9F4C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{D70E7405-ECEE-4BDC-BBF7-DDD0918A1141}"
 EndProject
