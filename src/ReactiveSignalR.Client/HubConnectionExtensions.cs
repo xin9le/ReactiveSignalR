@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reactive;
+using System.Reactive.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
 
@@ -348,6 +349,31 @@ namespace ReactiveSignalR.Client
                     observer.OnNext((a1, a2, a3, a4, a5, a6, a7, a8));
                     return Task.CompletedTask;
                 }
+            );
+        }
+        #endregion
+
+
+        #region Event as observable
+        /// <summary>
+        /// Gets the observable sequence that will be invoked when the connection is closed.
+        /// </summary>
+        /// <param name="connection">Hub connection.</param>
+        /// <returns></returns>
+        public static IObservable<Exception> CloseAsObservable(this HubConnection connection)
+        {
+            if (connection == null)
+                throw new ArgumentNullException(nameof(connection));
+
+            return Observable.FromEvent<Func<Exception, Task>, Exception>
+            (
+                handler => ex =>
+                {
+                    handler(ex);
+                    return Task.CompletedTask;
+                },
+                handler => connection.Closed += handler,
+                handler => connection.Closed -= handler
             );
         }
         #endregion
